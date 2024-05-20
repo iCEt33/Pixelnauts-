@@ -11,6 +11,7 @@ import requests
 
 # This script has some specific Discord roles related thingies 
 # aaaand in the future I might make it so that it will create these roles when the bot joins to the server :3
+# also there's a lot of other custom stuff but I'll try to indicate it, so CTRL+F for "custom"
 
 openai.api_key = "OpenAI API"
 
@@ -19,14 +20,14 @@ intents.members = True
 intents.presences = True
 bot = commands.Bot(command_prefix="", intents=intents)
 
-max_tokens = 512
+max_tokens = 512 # I found this number good enough
 
 # Define a list of whitelisted words
 whitelisted_words = ["whitelisted words go here"]
 
 word_filter = ["bad words go here"]
 
-allowed_characters = {'é', 'á', 'ö', 'ü', 'ó', 'ű', 'ú', 'ő', 'í'}
+allowed_characters = {'é', 'á', 'ö', 'ü', 'ó', 'ű', 'ú', 'ő', 'í'} #customize it for your needs, this is for the ascii chars 
 
 # Add your list of filtered words here
 cooldown_time = timedelta(minutes=30)  # Updated cooldown time to 30 minutes
@@ -118,7 +119,7 @@ async def on_message(message):
     # Check for shut down command
     if message.content.lower() == 'shut down':
         # Check if the user has the "epic gamer (mod)" role
-        if any(role.name == 'epic gamer (mod)' for role in message.author.roles): # like this is role specific that's what I meant above
+        if any(role.name == 'epic gamer (mod)' for role in message.author.roles): # like this is custom role that's what I meant above
             await message.channel.send("Shut down process initiated...")
 
             # Countdown
@@ -140,7 +141,7 @@ async def on_message(message):
                            "Smell you later, potato gratinator! Stay spud-tacular!",
                            "Time to vanish like a ninja cat on a stealth mission. Poof!"]
             random_bye_phrase = random.choice(bye_phrases)
-            await message.channel.send(f"{random_bye_phrase} <:happi:1202300923460980756>")
+            await message.channel.send(f"{random_bye_phrase} <:happi:1202300923460980756>") # I'm using a custom emoji here
 
             # Bot stops responding
             is_bot_active = False
@@ -164,7 +165,7 @@ async def on_message(message):
                            "Salutations, sentient being! Let the chatter commence!",
                            "Suh dude"]
             random_hai_phrase = random.choice(hai_phrases)
-            await message.channel.send(f"{random_hai_phrase} <:happi:1202300923460980756>")
+            await message.channel.send(f"{random_hai_phrase} <:happi:1202300923460980756>") # custom emoji here too
             is_bot_active = True  # Set the flag to True to resume normal operations
             blackjack_active = False
         else:
@@ -245,9 +246,6 @@ async def on_message(message):
             await message.delete()
             await message.channel.send("👌")
 
-        if content_lower == "fasz":
-            await message.channel.send("8=D")
-
 # Blackjack 1/2
 
         if "blackjack" in message.content.lower():
@@ -278,16 +276,16 @@ async def on_message(message):
                             "Wishing you luck as persistent as spam emails",
                             "Break a pencil! (Because breaking legs is too mainstream.) Best of luck!"]
             random_wish_phrase = random.choice(wish_phrases)
-            await message.channel.send(f"{random_wish_phrase} <:happi:1202300923460980756>")
+            await message.channel.send(random_wish_phrase)
 
 # Gaming queue - for 5 player lobby
 
         content_lower = message.content.lower()
         
-        if "who is ready for gaming guise" in content_lower:
+        if "who is ready for gaming" in content_lower:
             # Check if the author has the "epic gamer (mod)" role
-            if any(role.name == 'epic gamer (mod)' for role in message.author.roles):
-                await message.channel.send("Please send 'me' in the chat to play with the big nuster plis")
+            if any(role.name == 'epic gamer (mod)' for role in message.author.roles): # custom role
+                await message.channel.send("Please send 'me' in the chat")
                 triggered = True
 
         if triggered:
@@ -300,7 +298,7 @@ async def on_message(message):
 
             if "show the gaming" in content_lower:
                 # Check if the author has the "epic gamer (mod)" role
-                if any(role.name == 'epic gamer (mod)' for role in message.author.roles):
+                if any(role.name == 'epic gamer (mod)' for role in message.author.roles): # custom role
                     # Ensure there are enough players for the gaming session
                     if len(gaming_players) >= 4:
                         # Randomly select 4 players from the list
@@ -316,7 +314,7 @@ async def on_message(message):
 
             if "show nuster list" in content_lower:
                 # Check if the author has the "epic gamer (mod)" role
-                if any(role.name == 'epic gamer (mod)' for role in message.author.roles):
+                if any(role.name == 'epic gamer (mod)' for role in message.author.roles): # custom role
                     # Send a message listing all the players in the gaming list
                     if gaming_players:
                         players_mention = "\n".join([player.mention for player in gaming_players])
@@ -334,7 +332,7 @@ async def on_message(message):
 
         if specialchars_active:
             # Check if the user has the 'epic gamer (mod)' role
-            if any(role.name == 'epic gamer (mod)' for role in message.author.roles):
+            if any(role.name == 'epic gamer (mod)' for role in message.author.roles): # custom role
                 # Allow messages from users with the 'epic gamer (mod)' role
                 pass
             else:
@@ -347,7 +345,7 @@ async def on_message(message):
                         pass  # Ignore NotFound error if the message is already deleted
 
                     # Respond to the user
-                    await message.channel.send(f"{message.author.mention} inglish plis!")
+                    await message.channel.send(f"{message.author.mention} English plis!")
         else:
             pass
 
@@ -442,7 +440,7 @@ async def on_message(message):
         # Check for the "thank you" 
         if 'thank you' in message.content.lower():
             # Execute the kebab
-            response_message = "welcome <:happi:1202300923460980756>"
+            response_message = "welcome <:happi:1202300923460980756>" # custom emoji used here
             await message.channel.send(response_message)
 
 # Kebab
@@ -473,6 +471,7 @@ async def on_message(message):
                 await message.channel.send("✨RARE ANIMATION✨")
                 await message.channel.send(rare_was_gif)
 
+
         # Check for the "drive" 
         if message.content.lower() == 'i drive':
             regular_drive_gifs = ["https://tenor.com/view/i-drive-drive-my-car-gif-7675608"]
@@ -490,6 +489,7 @@ async def on_message(message):
                 # Send the rare gif
                 await message.channel.send("✨RARE ANIMATION✨")
                 await message.channel.send(rare_drive_gif)
+
 
         # Check for the "sheesh" 
         if message.content.lower() == 'sheesh':
@@ -514,26 +514,6 @@ async def on_message(message):
                 await message.channel.send("✨RARE ANIMATION✨")
                 await message.channel.send(rare_sheesh_gif)
 
-        # Check for the "drive" 
-        if message.content.lower() == 'max verstappen':
-            regular_verstappen_gifs = ["https://tenor.com/view/max-verstappen-f1-formule-1-gif-15087359750872636720"]
-
-            rare_verstappen_gif = ["https://tenor.com/view/max-verstappen-formula1-dutch-max-verstappen-gif-26539525",
-                                   "https://tenor.com/view/verstappen-max-verstappen-f1-racing-jos-verstappen-gif-14899758",
-                                   "https://tenor.com/view/max-verstappen-gif-9973613431036796750"]
-            # Probability of regular gifs
-            regular_probability = 0.9
-
-            # Decide which gif to send based on probabilities
-            if random.random() < regular_probability:
-                # Send a regular gif
-                random_verstappen_gif = random.choice(regular_verstappen_gifs)
-                await message.channel.send(random_verstappen_gif)
-            else:
-                # Send the rare gif
-                await message.channel.send("✨RARE ANIMATION✨")
-                random_rareverstappen_gif = random.choice(rare_verstappen_gif)
-                await message.channel.send(random_rareverstappen_gif)
 
         # Check for the "💀" 
         if '💀' in message.content.lower():
@@ -552,6 +532,7 @@ async def on_message(message):
                 # Send the rare gif
                 await message.channel.send("✨RARE ANIMATION✨")
                 await message.channel.send(rare_skull_gif)
+
 
         # Check for the "🤔" 
         if '🤔' in message.content.lower():
@@ -603,25 +584,6 @@ async def on_message(message):
                 await message.channel.send("✨RARE ANIMATION✨")
                 await message.channel.send(rare_drilla_gif) 
 
-        # Check for the "report" 
-        if re.search(r'\breport\w*\b', message.content, re.IGNORECASE):
-            regular_report_gifs = ["https://tenor.com/view/star-trek-trek-report-status-damage-gif-21869277"]
-            
-            rare_report_gif = "https://tenor.com/view/toji-megumi-toji-fushiguro-megumi-fushiguro-discord-gif-2805240552671542658"
-            # Probability of regular gifs
-            regular_probability = 0.9
-
-            # Decide which gif to send based on probabilities
-            if random.random() < regular_probability:
-                # Send a regular gif
-                random_regular_gif = random.choice(regular_report_gifs)
-                await message.channel.send(random_regular_gif)
-            else:
-                # Send the rare gif
-                await message.channel.send("✨RARE ANIMATION✨")
-                await message.channel.send(rare_report_gif)
-
- 
         # Check for the "no way" 
         noway_stuff = ['no wa', 'noway', 'ainnowae', 'ainnoway', "ain't no way", "ain't noway"]
         if any(noway in message.content.lower() for noway in noway_stuff):
@@ -640,50 +602,6 @@ async def on_message(message):
                 # Send the rare gif
                 await message.channel.send("✨RARE ANIMATION✨")
                 await message.channel.send(rare_noway_gif)
-
-        # Check for the "GG" 
-        if message.content.lower() == 'gg':
-            regular_gg_gifs = ["https://tenor.com/view/gg-gif-24670718",
-                               "https://tenor.com/view/gg-meme-dank-cursed-khat-gif-21280690",
-                               "https://tenor.com/view/alien-gg-gif-27684675",
-                               "https://tenor.com/view/pewdiepie-brofist-gg-gif-27128168",
-                               "https://tenor.com/view/gg-gif-20863608",
-                               "https://tenor.com/view/vegeta-gg-funny-gif-27616929",
-                               "https://tenor.com/view/henya-vshojo-gg-gif-5775450130544379213",
-                               "https://tenor.com/view/gautam-gambhir-gg-good-game-gif-25445097",
-                               ]
-            
-            rare_gg_gif = "https://tenor.com/view/morgan-freeman-freeman-goodgame-gg-good-gif-14900806"
-            # Probability of regular gifs
-            regular_probability = 0.9
-
-            # Decide which gif to send based on probabilities
-            if random.random() < regular_probability:
-                # Send a regular gif
-                random_gg_gif = random.choice(regular_gg_gifs)
-                await message.channel.send(random_gg_gif)
-            else:
-                # Send the rare gif
-                await message.channel.send("✨RARE ANIMATION✨")
-                await message.channel.send(rare_gg_gif)
-
-        # Check for the "dik" 
-        if message.content.lower() == 'dik':
-            regular_dik_gifs = ["https://tenor.com/view/dik-excuse-me-well-ex-dik-az-diiik-gif-6919552955213007891"]
-            
-            rare_dik_gif = "https://tenor.com/view/dikszoszi-gif-20320611"
-            # Probability of regular gifs
-            regular_probability = 0.9
-
-            # Decide which gif to send based on probabilities
-            if random.random() < regular_probability:
-                # Send a regular gif
-                random_regular_gif = random.choice(regular_dik_gifs)
-                await message.channel.send(random_regular_gif)
-            else:
-                # Send the rare gif
-                await message.channel.send("✨RARE ANIMATION✨")
-                await message.channel.send(rare_dik_gif)
 
         # Check for the "F" 
         if message.content.lower() == 'f':
@@ -711,23 +629,6 @@ async def on_message(message):
                 await message.channel.send("✨RARE ANIMATION✨")
                 await message.channel.send(rare_f_gif)
 
-        # Check for the "duit" 
-        if message.content.lower() == 'duit':
-            regular_duit_gifs = ["https://tenor.com/view/doit-starwars-kill-gif-5023949"]
-
-            rare_duit_gif = "https://tenor.com/view/palpatine-do-it-gif-26306996"
-            # Probability of regular gifs
-            regular_probability = 0.9
-
-            # Decide which gif to send based on probabilities
-            if random.random() < regular_probability:
-                # Send a regular gif
-                random_regular_gif = random.choice(regular_duit_gifs)
-                await message.channel.send(random_regular_gif)
-            else:
-                # Send the rare gif
-                await message.channel.send("✨RARE ANIMATION✨")
-                await message.channel.send(rare_duit_gif)
 
         # Check for the "W" 
         if message.content.lower() == 'w':
@@ -799,32 +700,6 @@ async def on_message(message):
                 await message.channel.send("✨RARE ANIMATION✨")
                 await message.channel.send(rare_plink_gif)         
 
-        # Check for the "wo" 
-        if message.content.lower() == 'wo':
-            regular_wo_gifs = ["https://tenor.com/view/mouth-drop-woah-sparkly-eyes-sparkle-blush-gif-8681516",
-                                "https://tenor.com/view/pikachu-shocked-face-stunned-pokemon-shocked-not-shocked-omg-gif-24112152",
-                                "https://tenor.com/view/shocked-surprised-gasp-what-cat-shock-gif-635629308990545194",
-                                "https://tenor.com/view/surprised-sorprendido-shaquille-oneal-gif-23222312",
-                                "https://tenor.com/view/anime-frieren-anime-shocked-drop-book-frieren-beyond-journeys-end-gif-4911429611178279007",
-                                "https://tenor.com/view/oh-no-gif-24189318",
-                                "https://tenor.com/view/anime-konosuba-shocked-shocked-face-surprise-gif-13893147",
-                                "https://tenor.com/view/eh-shomin-sample-wtf-animecute-gif-21035027",
-                                ]
-
-            rare_wo_gif = "https://tenor.com/view/shock-shocker-shocked-black-guy-gif-27526370"
-            # Probability of regular gifs
-            regular_probability = 0.9
-
-            # Decide which gif to send based on probabilities
-            if random.random() < regular_probability:
-                # Send a regular gif
-                random_regular_gif = random.choice(regular_wo_gifs)
-                await message.channel.send(random_regular_gif)
-            else:
-                # Send the rare gif
-                await message.channel.send("✨RARE ANIMATION✨")
-                await message.channel.send(rare_wo_gif)         
-
 
         # Check for the "misinput" 
         misinput_stuff = ['misinput', 'misclick', 'missclick']
@@ -846,37 +721,6 @@ async def on_message(message):
                 await message.channel.send(rare_misinput_gif)
 
 
-        # Check for the "restarted" 
-        if re.search(r'\brestarted\b', message.content, re.IGNORECASE):
-            await message.channel.send("https://tenor.com/view/dragon-ball-z-goku-clapping-happy-gif-19981641")
-
-
-        # Check for the "haram" 
-        if re.search(r'\bharam\b', message.content, re.IGNORECASE):
-            regular_haram_gifs = ["https://tenor.com/view/haram-gif-26607190",
-                        "https://tenor.com/view/haram-heisenberg-gif-20680378",
-                        "https://tenor.com/view/haram-gif-18566347",
-                        "https://tenor.com/view/haram-anomaly-lock-sussy-haram-gif-21477600",
-                        "https://tenor.com/view/haram-gif-26607190",
-                        "https://tenor.com/view/haram-heisenberg-gif-20680378",
-                        "https://tenor.com/view/haram-gif-18566347",
-                        "https://tenor.com/view/haram-anomaly-lock-sussy-haram-gif-21477600"]
-            
-            rare_haram_gif = "https://tenor.com/view/king-hassan-first-hassan-fgo-fate-grand-order-haram-gif-26104872"
-            # Probability of regular gifs
-            regular_probability = 0.9
-
-            # Decide which gif to send based on probabilities
-            if random.random() < regular_probability:
-                # Send a regular gif
-                random_regular_gif = random.choice(regular_haram_gifs)
-                await message.channel.send(random_regular_gif)
-            else:
-                # Send the rare gif
-                await message.channel.send("✨RARE ANIMATION✨")
-                await message.channel.send(rare_haram_gif)
-
-
         # Check for the "bruh" 
         if re.search(r'\bbruh\b', message.content, re.IGNORECASE):
             regular_bruh_gifs = ["https://tenor.com/view/bruh-gif-19257317"]
@@ -894,6 +738,7 @@ async def on_message(message):
                 # Send the rare gif
                 await message.channel.send("✨RARE ANIMATION✨")
                 await message.channel.send(rare_bruh_gif)
+
 
         # Check for the "69" 
         if re.search(r'\b69\b', message.content, re.IGNORECASE):
@@ -925,54 +770,6 @@ async def on_message(message):
                 await message.channel.send("✨RARE ANIMATION✨")
                 await message.channel.send(rare_nice_gif)
                 await message.channel.send("69")
-
-        # Check for the "simple" 
-        simple_stuff = ['s1mple', 'simple', 'simpel', 'simpol', 'pimpol', 'zaza', '420']
-        if any(simple in message.content.lower() for simple in simple_stuff):
-            await message.channel.send("https://tenor.com/view/simple-s1mple-simpol-zaza-simple-zaza-gif-9972159044225534389")
-
-        # Check for the "MLG" 
-        if re.search(r'\bmlg\b', message.content, re.IGNORECASE):
-            mlg_gifs = ["https://tenor.com/view/rekt-gif-25016725",
-                        "https://tenor.com/view/ddf-mlg-wink-gif-15688443",
-                        "https://tenor.com/view/litty-mlg-wow-gif-22702489",
-                        "https://tenor.com/view/gabbiehanna-thegabbieshow-swag-dab-dabbing-gif-22156041",
-                        "https://tenor.com/view/mlg-penguinz-penguinz-meme-penguinz-meme-penguinz-gif-gif-20516054",
-                        "https://tenor.com/view/mlg-snoop-dogg-doritos-mountaun-dew-yolo-gif-14326298",
-                        "https://tenor.com/view/wow-cat-thug-life-doritos-mountain-dew-gif-14737452",
-                        "https://tenor.com/view/jalal-halak-jalal-halak-math-teacher-sst-gif-12463444",
-                        "https://tenor.com/view/transformice-transformice-emote-transformice-kiss-yrdmax-leeply-gif-25416323",
-                        ]
-            random_mlg_gif = random.choice(mlg_gifs)
-            await message.channel.send(random_mlg_gif)            
-
-        # Check for the "green" 
-        if message.content.lower() == 'green':
-            regular_tense_gifs = ["https://tenor.com/view/tense1983-tense-csgo-gif-15600543",
-                          "https://tenor.com/view/tense-gif-19013622",
-                          "https://tenor.com/view/tense1983-tense-spain-epic-csongo-gif-15101114",
-                          "https://tenor.com/view/tense1983-csgo-rage-angry-slam-gif-14690595",
-                          "https://tenor.com/view/tense1983-rage-csgo-best-troll-eu-gif-14590429",
-                          "https://tenor.com/view/tense1983-rage-computer-keyboard-mad-gif-17503472",
-                          "https://tenor.com/view/green-gif-19259031",
-                          "https://tenor.com/view/tense1983-green-whats-your-problem-gif-2264510229100353237",
-                          "https://tenor.com/view/rage-gif-23450148",
-                          "https://tenor.com/view/tense1983-gif-14151875",
-                          "https://tenor.com/view/tense1983-gif-24718683"]
-            
-            rare_tense_gif = "https://tenor.com/view/tense-tense1983-csgo-counter-strike-excited-gif-17524674"
-            # Probability of regular gifs
-            regular_probability = 0.9
-
-            # Decide which gif to send based on probabilities
-            if random.random() < regular_probability:
-                # Send a regular gif
-                random_regular_gif = random.choice(regular_tense_gifs)
-                await message.channel.send(random_regular_gif)
-            else:
-                # Send the rare gif
-                await message.channel.send("✨RARE ANIMATION✨")
-                await message.channel.send(rare_tense_gif)
 
 # Magic 8 ball
 
@@ -1009,92 +806,6 @@ async def on_message(message):
             await asyncio.sleep(1)
             await message.channel.send(f"**{random_magic8}**")
 
-# What's yappening
-
-        # Check if the user id is already in the dictionary
-        if message.author.id in user_message_counts:
-            # Get the last message time for the user
-            last_message_time = user_message_counts[message.author.id]["last_message_time"]
-            
-            # Check if the last message was sent within
-            if current_time - last_message_time < timedelta(seconds=30):
-                # Increment the message count for the user
-                user_message_counts[message.author.id]["message_count"] += 1
-            else:
-                # Reset the message count when the last message was sent
-                user_message_counts[message.author.id]["message_count"] = 1
-
-            # Update the last message time for the user
-            user_message_counts[message.author.id]["last_message_time"] = current_time
-        else:
-            # Add the user to the dictionary if not already present
-            user_message_counts[message.author.id] = {
-                "message_count": 1,
-                "last_message_time": current_time
-            }
-            
-        # Add the user ID to the history
-        user_id_history.append(message.author.id)
-
-        # Check if all user IDs in the history are the same (spam))
-        if len(set(user_id_history)) == 1 and len(user_id_history) == 10:
-            # Check if the user has the 'epic gamer (mod)' role
-            if any(role.name == 'epic gamer (mod)' for role in message.author.roles):
-                # Allow messages from users with the 'epic gamer (mod)' role
-                pass
-            else:
-                if user_message_counts[message.author.id]["message_count"] % 10 == 0 and user_message_counts[message.author.id]["message_count"] <= 10:
-                    # Tag the user and send a message
-                    await message.channel.send(f"{message.author.mention} stop spamming")
-
-        # Check if the user has sent more than 21 messages (mute)
-        if user_message_counts[message.author.id]["message_count"] > 50:
-            # Check if the user has the 'epic gamer (mod)' role
-            if any(role.name == 'epic gamer (mod)' for role in message.author.roles):
-                # Allow messages from users with the 'epic gamer (mod)' role
-                pass
-            else:
-                # Give the user the "naughty gamer" role
-                naughty_gamer_role = discord.utils.get(message.guild.roles, name="Naughty Gamer")
-                await message.author.add_roles(naughty_gamer_role)
-                # Send a message to notify the user
-                await message.channel.send(f"{message.author.mention} MUTED!")
-
-                # Wait for one minute
-                await asyncio.sleep(60)
-
-                # Remove the "naughty gamer" role from the user
-                await message.author.remove_roles(naughty_gamer_role)
-                # Send a message to notify the user
-                await message.channel.send(f"{message.author.mention} Your mute has been lifted but STOP YAPPING")
-            
-        # Check if the user has sent more than 20 messages (GIF)
-        if user_message_counts[message.author.id]["message_count"] > 20:
-            # Check if the user has the 'epic gamer (mod)' role
-            if any(role.name == 'epic gamer (mod)' for role in message.author.roles):
-                # Allow messages from users with the 'epic gamer (mod)' role
-                pass
-            else:
-                yapping_gifs = ["https://tenor.com/view/yapping-yapping-level-today-catastrophic-yapanese-gif-13513208407930173397",
-                                "https://tenor.com/view/the-rock-rock-me-explaining-yapping-what-is-bro-yapping-about-gif-4331156902044955863",
-                                "https://tenor.com/view/super-mario-bros-wonder-talking-flower-template-mario-wonder-meme-gif-7964213445666430726",
-                                "https://tenor.com/view/saving-skylands-savingskylands-you%27ve-been-giffed-gif-7051846494767136386",
-                                "https://tenor.com/view/party-smile-yapping-gif-16342222781629643311",
-                                "https://tenor.com/view/yapping-gif-3664239514826816233"
-                                ]
-                random_yapping_gif = random.choice(yapping_gifs)
-                await message.channel.send(random_yapping_gif)
-
-        # Check if the user has sent more than 15 messages (yap)
-        if user_message_counts[message.author.id]["message_count"] % 15 == 0 and user_message_counts[message.author.id]["message_count"] <= 15:
-            # Check if the user has the 'epic gamer (mod)' role
-            if any(role.name == 'epic gamer (mod)' for role in message.author.roles):
-                # Allow messages from users with the 'epic gamer (mod)' role
-                pass
-            else:
-                # Tag the user and send a message
-                await message.channel.send(f"{message.author.mention} stop yapping")
-
 # Basic capabilities
 
         if message.content.lower() == 'basic stuff':
@@ -1104,7 +815,7 @@ async def on_message(message):
 
         if message.content.lower().startswith('update battery'): # Because I'm running the script on my old phone lol
             # Check if the user has the "epic gamer (mod)" role
-            if any(role.name == 'epic gamer (mod)' for role in message.author.roles):
+            if any(role.name == 'epic gamer (mod)' for role in message.author.roles): # custom role
                 # Extract the new battery percentage from the message
                 new_battery_percentage = int(message.content.lower().split(' ')[-1])
 
@@ -1126,7 +837,7 @@ async def on_message(message):
 
         if message.content.lower() == 'info':
             # Check if the user has the "epic gamer (mod)" role
-            if any(role.name == 'epic gamer (mod)' for role in message.author.roles):
+            if any(role.name == 'epic gamer (mod)' for role in message.author.roles): # custom role
                 # Calculate uptime
                 uptime = datetime.now() - start_time
 
@@ -1168,7 +879,7 @@ async def on_message(message):
                 # Send info message
                 await message.channel.send(info_message)
 
-# Changelog
+# Changelog, I removed some features from this open source code
 
         # Changelog feature
         changelog = {
@@ -1236,7 +947,7 @@ async def on_message(message):
         # Check for "rehab" command
         if message.content.lower() == 'rehab':
             member = message.author
-            rehab_role = discord.utils.get(message.guild.roles, name="gambling addict rehabilitation program")
+            rehab_role = discord.utils.get(message.guild.roles, name="gambling addict rehabilitation program") # custom role
             if rehab_role:
                 # Add the role to the member
                 await member.add_roles(rehab_role)
@@ -1287,7 +998,7 @@ async def on_message(message):
         # Check if the user wants to free someone
         if message.content.lower().startswith('free <@'):
             # Check if the author has the "epic gamer (mod)" role
-            if any(role.name == 'epic gamer (mod)' for role in message.author.roles):
+            if any(role.name == 'epic gamer (mod)' for role in message.author.roles): # custom role
                 # Check if the user wants to free a specific user
                 user_matches = re.finditer(r'<@!?(\d+)>', message.content)
                 for user_match in user_matches:
@@ -1330,7 +1041,7 @@ async def on_message(message):
         # Check for "sentence to prison" command
         if "sentence" in message.content.lower() and "to prison" in message.content.lower():
             # Check if the author has the "epic gamer (mod)" role
-            if any(role.name == 'epic gamer (mod)' for role in message.author.roles):
+            if any(role.name == 'epic gamer (mod)' for role in message.author.roles): # custom role
                 # Extract the duration from the message
                 duration_match = re.search(r'for (\d+|life)?\s*(year|years|month|months|life)', message.content.lower())
                 if duration_match:
@@ -1339,7 +1050,7 @@ async def on_message(message):
                     if time_unit == 'month' or time_unit == 'months':
                         timer_seconds = duration * 60  # Convert months to minutes
                     elif time_unit == 'year' or time_unit == 'years':
-                        timer_seconds = duration * 600  # Convert years to minutes
+                        timer_seconds = duration * 600  # Convert years to hours
                     else:
                         timer_seconds = 36000  # Default to 10 hour for life sentence
 
@@ -1350,7 +1061,7 @@ async def on_message(message):
                         member = message.guild.get_member(user_id)
                         if member:
                             # Give the "Naughty Gamer" role to the user
-                            naughty_gamer_role = discord.utils.get(message.guild.roles, name="Naughty Gamer")
+                            naughty_gamer_role = discord.utils.get(message.guild.roles, name="Naughty Gamer") # custom role
                             if naughty_gamer_role:
                                 await member.add_roles(naughty_gamer_role)
                                 
@@ -1370,7 +1081,7 @@ async def on_message(message):
                         user, release_time = sentenced_user_info
                         if now >= release_time:
                             # Remove the "Naughty Gamer" role
-                            naughty_gamer_role = discord.utils.get(user.guild.roles, name="Naughty Gamer")
+                            naughty_gamer_role = discord.utils.get(user.guild.roles, name="Naughty Gamer") # custom role
                             if naughty_gamer_role in user.roles:
                                 await user.remove_roles(naughty_gamer_role)
                                 await message.channel.send(f"{user.mention} has served their time and is back in society!")
@@ -1453,7 +1164,7 @@ async def on_message(message):
 
             if member:
                 # Give "Naughty Gamer" role
-                naughty_gamer_role = discord.utils.get(message.guild.roles, name="Naughty Gamer")
+                naughty_gamer_role = discord.utils.get(message.guild.roles, name="Naughty Gamer") # custom role
                 if naughty_gamer_role:
                     await member.add_roles(naughty_gamer_role)
 
@@ -1475,7 +1186,7 @@ async def on_message(message):
                 # Remove the "Naughty Gamer" role after the timeout duration
                 await member.remove_roles(naughty_gamer_role)
 
-                await message.channel.send(f"User {member.mention} has gained back their right to talker <:happi:1202300923460980756>")
+                await message.channel.send(f"User {member.mention} has gained back their right to talking")
 
             else:
                 await message.channel.send("Unable to find the user to timeout.")
@@ -1647,7 +1358,7 @@ async def on_message(message):
 # Parrot mode
 
         # Define the keywords to trigger the response
-        keywords = ["szia", "real", "gaming", "yippie", "<:happi:1202300923460980756>", ":3", "xd"]
+        keywords = ["szia", "real", "gaming", "yippie", ":3", "xd"]
 
         # Check if any of the keywords are present in the message
         keyword_present = any(keyword in message.content.lower() for keyword in keywords)
@@ -1717,7 +1428,7 @@ async def check_stream():  # Az hogy async szard le, annyi hogy több dolog mehe
                                 ,"<:rizz2:1204614534673866872>" ,"<:prayge:1204625161559744522>" ,"<:gigachad:1204625346423689298>" 
                                 ,"<:catCute:1204624941001998346>" ,"<:catHuh:1204625456184299521>" ,"<:Clueless:1204110114781528084>" 
                                 ,"<:NAHHH:1204614480601022464>" ,"<:Jojo:1204898145146769509>" ,"<:HUH:1204109317888934000>" 
-                                ,"<:heart:1204626406601007155>" ]
+                                ,"<:heart:1204626406601007155>" ] # custom emojis
                 random_stream_emoji = random.choice(stream_emoji)
                 announcement_message = f"@everyone <:twitch:1237004331014688849> LIVE! <:twitch:1237004331014688849>\n\n{stream_title} {random_stream_emoji}\n\n{stream_url}"
                 channel = bot.get_channel(channel_id)
@@ -1842,7 +1553,7 @@ async def check_sentences():
             user, release_time = sentenced_user_info
             if now >= release_time:
                 # Remove the "Naughty Gamer" role
-                naughty_gamer_role = discord.utils.get(user.guild.roles, name="Naughty Gamer")
+                naughty_gamer_role = discord.utils.get(user.guild.roles, name="Naughty Gamer") # custom role
                 if naughty_gamer_role:
                     await user.remove_roles(naughty_gamer_role)
 
