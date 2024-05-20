@@ -86,9 +86,6 @@ difference = 0
 
 battery_warning = False
 
-# Variable to track whether the "maybe check heaven?" mode is active
-heaven_mode_active = False
-
 # Fucking Stream announcement
 streaming_yes = False
 stream_checked = False
@@ -104,7 +101,7 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    global is_bot_active, stream_stop_active, heaven_mode_active, start_time, battery_warning, battery_updated, original_battery_percentage, remaining_percentage, difference, blackjack_active, disability_mode, specialchars_active, last_triggered_time_fr, triggered, bomboclat_mode, weeb_mode, haix_mode, brokey_mode, casual_mode, saul_mode, rps_player_id
+    global is_bot_active, stream_stop_active, start_time, battery_warning, battery_updated, original_battery_percentage, remaining_percentage, difference, blackjack_active, disability_mode, specialchars_active, last_triggered_time_fr, triggered, bomboclat_mode, weeb_mode, haix_mode, brokey_mode, casual_mode, saul_mode, rps_player_id
 
     if message.author.bot:
         return
@@ -169,7 +166,7 @@ async def on_message(message):
             is_bot_active = True  # Set the flag to True to resume normal operations
             blackjack_active = False
         else:
-            await message.channel.send("i slip")
+            await message.channel.send("I sleep")
 
     if message.content.lower() == 'rigged':
         blackjack_active = True
@@ -216,7 +213,7 @@ async def on_message(message):
             await message.channel.send("https://tenor.com/view/no-i-dont-think-i-will-captain-america-old-capt-gif-17162888")
             return
         
-            # Word replacer
+# Word replacer
         if "cap" in content_lower:
             # Check if the message contains just "cap"
             if content_lower.strip() == "cap":
@@ -235,8 +232,7 @@ async def on_message(message):
                     await message.channel.send(replaced_word.strip() + " 🧢")
                         
         # Check for other specific messages
-        cool_list = ['cool', 'cooi']
-        if any(cool in content_lower for cool in cool_list):
+        if content_lower == "cool" :
             # Delete the user's message and send the sunglasses emoji
             await message.delete()
             await message.channel.send("😎")
@@ -312,7 +308,7 @@ async def on_message(message):
                     else:
                         await message.channel.send("Not enough players for the gaming session!")
 
-            if "show nuster list" in content_lower:
+            if "show gaming list" in content_lower:
                 # Check if the author has the "epic gamer (mod)" role
                 if any(role.name == 'epic gamer (mod)' for role in message.author.roles): # custom role
                     # Send a message listing all the players in the gaming list
@@ -367,18 +363,6 @@ async def on_message(message):
         if 'most perfect pasta recipe ever to exist' in message.content.lower():
             await message.channel.send(f"You need:\nHam\nLike a dozen shrimp\nPasta\n1 tablespoon peanutbutter\nSome milk to make it creamy\nBuldak hot sauce\n2 tablespoon oyster sauce\n1 egg\n\nNow... you have to cook the pasta, fry the ham and prepare the shrimps. You need to mix all the stuff for the sauce then mix everything and finally add the egg like you'd make carbonara. Enjoy!")
 
-# French Revolution
-
-        if last_triggered_time_fr is None or current_time - last_triggered_time_fr >= timedelta(seconds=cooldown_time_fr):
-            # Check for the "fr" trigger
-            if re.search(r'\bfr\b', message.content, re.IGNORECASE):
-                # Execute the French Revolution command
-                response_message = f"French Revolution"
-                await message.channel.send(response_message)
-
-                # Update the last triggered time
-                last_triggered_time_fr = current_time
-
 # Flip a coin
 
         if message.content.lower() == 'flip a coin':
@@ -386,54 +370,6 @@ async def on_message(message):
             await message.channel.send("The coin landed on...")
             await asyncio.sleep(2)
             await message.channel.send(coin)
-
-# Maybe check heaven? (de_nuke callout, real gamers know)
-
-        if 'heaven' in message.content.lower():
-            heaven_mode_active = True
-            while heaven_mode_active:
-                # Generate a random time interval
-                interval = generate_random_interval()
-
-                # Wait for the random time interval
-                await asyncio.sleep(interval)
-
-                # Send the message
-                maybe_messages = ["maybe",
-                                "m-maybe",
-                                "maybe... maybe",
-                                "mmmmmm... maybe",
-                                "maybe... m-maybe",
-                                "mabe",
-                                "m-mabe",
-                                "mabe... mabe",
-                                "mmmmmm... mabe",
-                                "mabe... m-mabe"]
-                random_maybe = random.choice(maybe_messages)
-
-                check_messages = ["check",
-                                "shek",
-                                "checc",
-                                "sheck",
-                                "shecc"]
-                random_check = random.choice(check_messages)
-
-                heaven_messages = ["heaven",
-                                "heeven",
-                                "heven",
-                                "hevan",
-                                "hevon",
-                                "heevan",
-                                "heevon",
-                                "heeven"]
-                random_heaven = random.choice(heaven_messages)
-
-                await message.channel.send(f'{random_maybe} {random_check} {random_heaven}?')
-
-        if 'hell' in message.content.lower():
-            if heaven_mode_active:
-                heaven_mode_active = False
-                await message.channel.send("oke")
 
 # Welcome
         
@@ -879,7 +815,7 @@ async def on_message(message):
                 # Send info message
                 await message.channel.send(info_message)
 
-# Changelog, I removed some features from this open source code
+# Changelog, I removed some features from this open source version
 
         # Changelog feature
         changelog = {
@@ -1259,7 +1195,7 @@ async def on_message(message):
         if message.content.lower() == 'fixi':
             brokey_mode = False 
 
-        if message.content.lower() == 'chad':
+        if message.content.lower() == 'casual':
             casual_mode = True
             disability_mode = False
             bomboclat_mode = False
