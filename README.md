@@ -8,6 +8,7 @@ Additionally, the project plans to launch a gaming platform with various gaming 
 Education and community engagement are integral, with plans to share knowledge, inspire action, and foster a sense of responsibility towards the environment.
 
 [Socials and Other Links]
+
 Whitepaper:
 https://pixelnauts.gitbook.io/pixel-cryptonauts-whitepaper/
 
