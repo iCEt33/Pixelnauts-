@@ -1,0 +1,82 @@
+Terms of Service (ToS) for Beebo
+Effective Date: TBD
+Last Updated: 9/29/2024
+
+By using this bot, you agree to the following Terms of Service (ToS). Please read these terms carefully, as they govern your use of the bot and explain how your data is handled.
+
+1. Purpose of the Bot
+The purpose of Beebo is to provide entertainment, moderate server chats, and enhance engagement within the community. The bot offers chat moderation, chatbot capabilities, and various other functionalities to make servers more vibrant and interactive.
+
+2. Data Collection
+The bot collects the following information to function:
+
+User Data: Usernames and User IDs.
+Server Data: Server IDs, Channel IDs, and messages sent in the server (or direct messages to the bot).
+
+3. Data Storage and Use
+Collected data is temporarily stored within the app's runtime environment, which operates on a local device (phone). This means data is not permanently stored or shared with third parties unless required for bot functionality.
+Third-Party Integration: The bot uses OpenAI for chatbot features and spam detection. OpenAI processes user messages for these purposes.
+Data retention: Data is not stored permanently beyond the immediate use within the bot's script. Once the bot processes data (e.g., for a response or moderation), the data is discarded.
+
+4. Age Restrictions
+Users must meet the minimum age requirement as stipulated by Discord’s Terms of Service (13 years of age or older, or as required by local law).
+If users are minors, they must have parental or guardian consent. The responsibility for ensuring this consent lies with the parent or guardian.
+
+5. User Conduct & Rules
+By using Beebo, users agree to:
+
+Abide by the server’s own chat etiquette and rules, typically outlined in the server’s rules channel.
+Avoid spamming or excessively interacting with the bot, as it may cause the bot to be rate-limited, leading to delays or unresponsiveness.
+Not exploit or misuse the bot for malicious purposes.
+
+6. Consequences for Rule Violations
+If any user violates these terms:
+
+The bot owner reserves the right to review chat logs for unusual behavior or violations.
+The bot may be removed from a server without prior notice if necessary.
+Repeat offenders may be banned from using the bot or its features.
+
+7. Reporting Issues and Support
+For any issues, bugs, or support requests, please contact us via:
+
+Email: [pixelcryptonauts@gmail.com]
+We will respond to all inquiries within 48 hours.
+
+8. Updates to the ToS
+We reserve the right to update this ToS as needed. Any changes will be posted publicly. Users are encouraged to review the ToS periodically to stay informed of any updates.
+In the future, we may introduce a newsletter or notification system to provide updates on the bot, game projects, and changes to this ToS.
+
+9. Monetization and Subscription Services
+Payments and subscriptions are handled directly through Discord.
+Refunds: All payment and refund inquiries should be directed to Discord, as the platform handles these transactions.
+Subscription Management: Users can manage their subscriptions directly via Discord's platform (e.g., canceling, upgrading, or downgrading subscriptions).
+
+10. Third-Party Integrations
+Certain features of the bot (such as chatbot and moderation functions) rely on external services, particularly OpenAI. By using these features, you acknowledge that third-party services have their own Terms of Service and Privacy Policies. Please refer to these third-party terms when applicable.
+
+11. Limitation of Liability
+The bot is provided "as-is." We make no warranties, expressed or implied, regarding the bot’s performance or reliability. We are not responsible for any damages or losses that arise from the use of the bot, including but not limited to data loss, interruptions, or unexpected behavior.
+
+12. Termination of Service
+We reserve the right to suspend or terminate access to the bot at any time, for any reason, including rule violations or the protection of the bot’s functionality.
+
+13. User-Generated Content
+If the bot interacts with user-generated content (e.g., chat logs or messages), users are responsible for ensuring their content complies with all applicable laws and does not infringe on the rights of third parties. Inappropriate or illegal content will be removed.
+
+14. Data and Privacy Protection
+The bot collects the following data:
+
+Server Data: Server IDs and Channel IDs to facilitate interaction within the server.
+User Data: Usernames and messages sent via direct messages or in channels where the bot is active.
+We do not share any of this data with third parties, except for the chatbot feature, which uses OpenAI to process certain commands and messages.
+
+Security: While we strive to ensure the data processed by the bot is secure, please understand that the bot is run locally and data is temporarily stored only for operational purposes.
+
+15. Governing Law
+These Terms of Service shall be governed by and construed in accordance with the laws of Hungary, without regard to conflict of law principles. Any legal actions arising out of or related to the use of this bot will be brought in the courts of Hungary.
+
+16. Contact Information
+For any questions, concerns, or additional information, you may contact us via:
+
+Email: pixelcryptonauts@gmail.com
+Discord Tag: _ice_t
