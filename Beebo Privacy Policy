@@ -1,0 +1,58 @@
+Privacy Policy
+Effective Date: [Insert Date]
+
+1. Information We Collect
+Our Discord bot collects minimal data necessary for it to function correctly. Specifically, the bot collects the following:
+
+Server IDs, Channel IDs, User IDs, and Usernames: These are used to keep the bot operational and respond to commands.
+Messages Sent: The bot can access messages for moderation, entertainment purposes, and to interact with the OpenAI chatbot feature.
+Message Count Tracking: For certain features (such as moderation or spam detection), the bot temporarily tracks the number of messages sent within a specific period. This data is stored temporarily in the code's memory and is not accessible to Discord or stored permanently.
+
+2. How We Use the Information
+The collected data is used solely to enable the bot’s core functions, including:
+
+Chat Moderation: To ensure the server remains a safe and friendly environment.
+Chatbot Feature: Some messages are sent to OpenAI to process responses.
+Game and Entertainment Features: For features like the built-in games or other entertainment features, your messages are processed within the script.
+We do not analyze or track user behavior for marketing or other purposes, nor do we use third-party analytics.
+
+3. How Data is Stored
+The bot runs on a mobile device (phone), and data is stored temporarily:
+
+Temporary Storage: Messages and user data are temporarily stored in the running script. When the phone is turned off, all chatlogs are erased. The chatlogs are not stored permanently or saved locally.
+
+Weekly Erasure: At least once a week, the phone is turned off, clearing all temporary logs.
+Local Environment: The bot is run using the PyDroid3 application, which also clears all temporary logs when the device is powered down.
+
+4. Third-Party Services
+The only third-party service currently used is OpenAI, which processes certain messages sent to the bot as part of its chatbot functionality.
+
+Future Changes: If we migrate to a cloud-based virtual machine (VM) or add new third-party services, we will notify users and update this Privacy Policy to reflect those changes.
+
+5. Data Security
+We take reasonable precautions to protect your data. The phone used to run the bot is regularly updated, and no other applications run while the bot is active.
+
+While we strive to ensure the security of your data, no method of electronic storage or transmission is 100% secure. As such, we cannot guarantee absolute security.
+
+6. User Data Requests
+If you wish to request deletion of any data (such as chatlogs), please contact us:
+
+Email: pixelcryptonauts@gmail.com
+Discord: _ice_t
+Upon receiving such a request, we will restart the script, erasing all chatlogs displayed in the console.
+
+7. Children's Privacy
+Our bot is generally safe for all ages. It contains fun and interactive features, including a blackjack game without currency and no violent or inappropriate content.
+
+We do not knowingly collect personal data from anyone under the age of 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us to request deletion.
+
+8. Changes to this Privacy Policy
+We reserve the right to update this Privacy Policy as needed. Any changes will be posted publicly. Users are encouraged to review the Privacy Policy periodically to stay informed of any updates.
+
+In the future, we may introduce a newsletter or notification system to provide updates on the bot, game projects, and changes to this Privacy Policy.
+
+9. Contact Us
+If you have any questions or concerns about this Privacy Policy, you can contact us at:
+
+Email: pixelcryptonauts@gmail.com
+Discord: _ice_t
