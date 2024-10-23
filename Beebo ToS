@@ -5,10 +5,10 @@ Last Updated: 9/29/2024
 By using this bot, you agree to the following Terms of Service (ToS). Please read these terms carefully, as they govern your use of the bot and explain how your data is handled.
 
 1. Purpose of the Bot
-The purpose of Beebo is to provide entertainment, moderate server chats, and enhance engagement within the community. The bot offers chat moderation, chatbot capabilities, and various other functionalities to make servers more vibrant and interactive.
+The purpose of Beebo is to provide entertainment, moderate server chats, and enhance engagement within your community. The bot offers chat moderation, chatbot capabilities, and various other functionalities for the purpose of increasing engagement.
 
 2. Data Collection
-The bot collects the following information to function:
+The bot requires the following information in order to function:
 
 User Data: Usernames and User IDs.
 Server Data: Server IDs, Channel IDs, and messages sent in the server (or direct messages to the bot).
@@ -27,7 +27,7 @@ By using Beebo, users agree to:
 
 Abide by the server’s own chat etiquette and rules, typically outlined in the server’s rules channel.
 Avoid spamming or excessively interacting with the bot, as it may cause the bot to be rate-limited, leading to delays or unresponsiveness.
-Not exploit or misuse the bot for malicious purposes.
+Users are prohibited from exploiting or misusing the bot for purposes, malicious, or otherwise.
 
 6. Consequences for Rule Violations
 If any user violates these terms:
@@ -55,7 +55,28 @@ Subscription Management: Users can manage their subscriptions directly via Disco
 Certain features of the bot (such as chatbot and moderation functions) rely on external services, particularly OpenAI. By using these features, you acknowledge that third-party services have their own Terms of Service and Privacy Policies. Please refer to these third-party terms when applicable.
 
 11. Limitation of Liability
-The bot is provided "as-is." We make no warranties, expressed or implied, regarding the bot’s performance or reliability. We are not responsible for any damages or losses that arise from the use of the bot, including but not limited to data loss, interruptions, or unexpected behavior.
+  a. General Disclaimer
+  The bot is provided "as-is" and "as-available" without warranties of any kind, either expressed or implied. We do not guarantee that the bot will be free from defects, uninterrupted, or that it will meet your expectations. To the fullest extent permitted by applicable law, we disclaim all warranties, expressed or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+  
+  b. Limitation of Liability
+  In no event shall we, or any of our developers, be liable for any indirect, incidental, consequential, special, or punitive damages, including but not limited to loss of data, interruptions, or any damages arising from the use or inability to use the bot, even if we have been advised of the possibility of such damages. We will only be liable to refund any amount you have actually paid to access the bot's premium services or features. We do not provide compensation for non-material claims such as data loss, emotional distress, or inconvenience.
+  
+  c. Exceptions in Compliance with Applicable Law
+  This limitation of liability applies to the fullest extent permitted by law in the relevant jurisdiction. However, certain jurisdictions, such as within the United States and the European Union, may not allow the exclusion of certain warranties or the limitation of liability for certain types of damages. In such jurisdictions, our liability will be limited to the maximum extent permitted by law, and this provision will be interpreted to provide the maximum limitation on liability allowed.
+  
+  d. Specific to U.S. Users
+  For U.S. users, we acknowledge that certain state laws may limit the enforceability of blanket liability waivers. In cases where such limitations apply, we shall not be liable for any damages exceeding the amount you paid, if any, to access the bot's premium features or services. We do not provide compensation beyond the amount you paid to use the bot's premium features.
+  
+  e. Specific to EU Users
+  For users within the European Union, our liability will be limited in accordance with applicable consumer protection laws. We will not exclude or limit our liability for death or personal injury caused by our negligence, fraud, or fraudulent misrepresentation.
+
+  f. User-Generated Content & AI Responses
+
+  We are not liable for any actions taken as a result of interactions with the bot, including but not limited to advice or suggestions related to personal injury, death, or any harmful behavior. The bot uses AI-generated responses, including services provided by third parties like OpenAI, and these responses are generated based on user input. We make no warranties about the appropriateness, accuracy, or safety of such responses.
+  
+  The bot is not intended to provide professional advice, guidance, or instructions, particularly related to health, safety, or legal matters. If you encounter an inappropriate response or harmful content, please contact us immediately at pixelcryptonauts@gmail.com. We take this seriously and will take corrective action, but we disclaim any liability for misuse or harmful outcomes resulting from bot interactions.
+  
+  Furthermore, we reserve the right to immediately disable or limit the bot's functionality if it is being used to encourage or facilitate illegal or harmful activities.
 
 12. Termination of Service
 We reserve the right to suspend or terminate access to the bot at any time, for any reason, including rule violations or the protection of the bot’s functionality.
@@ -73,7 +94,7 @@ We do not share any of this data with third parties, except for the chatbot feat
 Security: While we strive to ensure the data processed by the bot is secure, please understand that the bot is run locally and data is temporarily stored only for operational purposes.
 
 15. Governing Law
-These Terms of Service shall be governed by and construed in accordance with the laws of Hungary, without regard to conflict of law principles. Any legal actions arising out of or related to the use of this bot will be brought in the courts of Hungary.
+These Terms of Service shall be governed by and construed in accordance with the laws of Hungary, without regard to its conflict of law principles. However, if you reside outside of Hungary, you may be entitled to protections and rights under the consumer protection laws of your own country. By using this bot, you agree that any legal action arising out of or related to the use of this bot will first attempt to be resolved in accordance with Hungarian law and courts. If local laws prevent this, any disputes may be brought in the courts of the user’s jurisdiction, subject to applicable local laws and regulations.
 
 16. Contact Information
 For any questions, concerns, or additional information, you may contact us via:
