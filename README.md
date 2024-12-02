@@ -1,11 +1,9 @@
 Pixel Cryptonauts is a diverse innovative non-profit project focused on sustainability and web3 development. It aims to promote environmental responsibility and drive positive change. 
-The project includes the creation of a sustainable merchandise line, utilizing eco-friendly materials like industrial hemp. A solar farm will power its operations, 
-supporting research on renewable energy technologies for a more sustainable future.
 
 [Project Plans]
 
 The project encompasses various key components, including the integration of AI technologies to create an interactive AI assistant, B-b0, providing personalized and entertaining experiences for users. 
-Additionally, the project plans to launch a gaming platform with various gaming experiences, beginning with the space-themed game, Project: Cosmos. 
+Additionally, the project plans to launch a space-themed game, Project: Cosmos. 
 Education and community engagement are integral, with plans to share knowledge, inspire action, and foster a sense of responsibility towards the environment.
 
 [Socials and Other Links]
