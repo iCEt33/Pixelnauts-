@@ -36,7 +36,7 @@ async def on_message(message):
         # Use the default prompt without the project context
         prompt = f'{user_input}\nB-b0: '
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "user", "content": prompt}
             ],
