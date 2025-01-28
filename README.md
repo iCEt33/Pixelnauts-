@@ -12,7 +12,7 @@ Whitepaper:
 https://pixelnauts.gitbook.io/pixel-cryptonauts-whitepaper/
 
 LinkTree:
-https://linktr.ee/pixel_cryptonauts
+https://linktr.ee/pixel_cryptonaut
 
 #TeamTrees:
 https://teamtrees.org/search?q=project%20cosmos
