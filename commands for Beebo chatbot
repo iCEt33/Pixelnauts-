@@ -1,0 +1,135 @@
+documentation for B-b0
+
+first things first:
+-------------------
+ON/OFF switch
+
+"shut down"
+"wakey wakey" 
+
+only moderators, so roles with admin rights! can trigger this and basically most of the features
+-------------------
+
+the bot has limited DM capabilities = 9 messages
+
+now the next thing
+-------------------
+Naught Gamer role
+
+created when the bot joins a server
+-------------------
+
+the bot also has a spam filter, this comes in handy for web3 servers!
+if your server gets spammed with like a fake announcement and/or giveaway scam and the bot doesn't delete it,
+please forward that message to me and I'll update the filter! 
+For good measure I've also added a GPT based filter too, just in case
+
+please note that people tried exploiting the bot by making it say stuff backwards or
+making it say stuff 800 times for no reason... I added countermeasures for that too, to go easy on the API
+-------------------
+Reminders!
+
+"remind me"
+"remind us"
+
+example message: remind me 5m gaming
+result: you'll get a DM 5 minutes later saying: gaming
+same with remind us only difference is that 'me' sends the user a DM and 'us' sends it in the same text channels
+------------------
+
+"flip a coin"
+
+flips a coin
+------------------
+
+the bot also has random GIF reactions so when people type stuff like W, L, sheesh, the bot might send a GIF
+
+------------------
+Magic 8 ball
+
+there's a few ways to trigger this but the simplest is the format 'magic8 [your question]'
+------------------
+
+now if someone has the Naughty Gamer role, you can type "free @user" to free them or type "free all"
+you can send someone to prison by typing "sentence @user to prison for xy months/years"
+I think months is minutes and years is hours
+
+------------------
+Rock Paper Scissors
+
+"rps" or "rock paper scissors" will start a game
+------------------
+To chat with Beebo simply include "Beebo, B-b0, B" in the sentence, it has to be capital B in all cases!
+
+it has a few personalities namely:
+
+Jamaican
+"bomboclat"
+"huihui"
+
+Casual
+"casual"
+"yapping"
+
+Saul Goodman
+"better call saul"
+"saul goodman"
+
+Bob
+"Bob"
+"bobby"
+
+Terminator
+"terminator"
+"terminated"
+-------------------
+CAP mode
+
+"capping"
+"nocap"
+
+this will react to a user's message that has the word "cap" in it 
+-------------------
+Blackjack
+
+"rigged"
+"legit"
+
+after that if someone types "blackjack" it will start a game of blackjack
+
+type hit/stay to play
+------------------
+
+"wish me luck" - the bot will wish you luck
+
+------------------
+I also added a gaming queue in case 10 people want to play in a 5 person squad
+
+"who is ready for gaming" - will start the stuff, after that whoever types "me" will be added to a list
+
+"show gaming list" - will show current gamers who typed "me"
+"the gaming squad" - will generate a squad randomly
+
+------------------
+Latin characters mode
+
+"ascii"
+"noscii"
+
+it will delete messages with non-latin characters like when people type in russian 
+------------------
+Experimental memory
+
+"!showcontext"
+"!deletecontext"
+
+when the bot is triggered it will try to store and use some previous messages from the user
+------------------
+Chatbot
+
+just tag the bot or include "B, Beebo, B-b0" in your message and it should respond
+------------------
+------------------
+
+That's about it I think. Have fun!
+
