@@ -1,11 +1,12 @@
 Terms of Service (ToS) for Beebo
-Effective Date: TBD
-Last Updated: 10/23/2024
+Effective Date: 10/23/2024
+Last Updated: 02/02/2025
 
 By using this bot, you agree to the following Terms of Service (ToS). Please read these terms carefully, as they govern your use of the bot and explain how your data is handled.
 
 1. Purpose of the Bot
-The purpose of Beebo is to provide entertainment, moderate server chats, and enhance engagement within your community. The bot offers chat moderation, chatbot capabilities, and various other functionalities for the purpose of increasing engagement.
+The purpose of Beebo is to provide entertainment, moderate server chats, and enhance engagement within your community. 
+The bot offers chat moderation, chatbot capabilities, and various other functionalities for the purpose of increasing engagement.
 
 2. Data Collection
 The bot requires the following information in order to function:
@@ -18,43 +19,62 @@ Collected data is temporarily stored within the app's runtime environment, which
 Third-Party Integration: The bot uses OpenAI for chatbot features and spam detection. OpenAI processes user messages for these purposes.
 Data retention: Data is not stored permanently beyond the immediate use within the bot's script. Once the bot processes data (e.g., for a response or moderation), the data is discarded.
 
-4. Age Restrictions
+4. Web3 Features and Cryptocurrency
+- Users acknowledge that cryptocurrency transactions are irreversible
+- The bot requires a small verification transaction (0.0001 POL) to link wallets
+- Users are responsible for ensuring they enter correct wallet addresses
+- Gas fees are automatically calculated and deducted from transactions
+- The bot is not responsible for:
+  * Lost funds due to incorrect wallet addresses
+  * Network fees or failed transactions
+  * Market volatility or cryptocurrency value changes
+  * Delays in transaction processing
+
+Security Best Practices
+- Never share your private keys
+- Always verify wallet addresses before sending
+- Keep your verification transaction receipt
+- Report any suspicious activity immediately
+
+Currently, the bot only supports transactions on the Polygon network. Attempting to send or receive funds from other networks may result in permanent loss of funds.
+
+5. Age Restrictions
 Users must meet the minimum age requirement as stipulated by Discord’s Terms of Service (13 years of age or older, or as required by local law).
 If users are minors, they must have parental or guardian consent. The responsibility for ensuring this consent lies with the parent or guardian.
 
-5. User Conduct & Rules
+6. User Conduct & Rules
 By using Beebo, users agree to:
 
 Abide by the server’s own chat etiquette and rules, typically outlined in the server’s rules channel.
 Avoid spamming or excessively interacting with the bot, as it may cause the bot to be rate-limited, leading to delays or unresponsiveness.
 Users are prohibited from exploiting or misusing the bot for purposes, malicious, or otherwise.
 
-6. Consequences for Rule Violations
+7. Consequences for Rule Violations
 If any user violates these terms:
 
 The bot owner reserves the right to review chat logs for unusual behavior or violations.
 The bot may be removed from a server without prior notice if necessary.
 Repeat offenders may be banned from using the bot or its features.
 
-7. Reporting Issues and Support
+8. Reporting Issues and Support
 For any issues, bugs, or support requests, please contact us via:
 
 Email: [pixelcryptonauts@gmail.com]
 We will respond to all inquiries within 48 hours.
 
-8. Updates to the ToS
+9. Updates to the ToS
 We reserve the right to update this ToS as needed. Any changes will be posted publicly. Users are encouraged to review the ToS periodically to stay informed of any updates.
 In the future, we may introduce a newsletter or notification system to provide updates on the bot, game projects, and changes to this ToS.
 
-9. Monetization and Subscription Services
+10. Monetization and Subscription Services
 Payments and subscriptions are handled directly through Discord.
 Refunds: All payment and refund inquiries should be directed to Discord, as the platform handles these transactions.
 Subscription Management: Users can manage their subscriptions directly via Discord's platform (e.g., canceling, upgrading, or downgrading subscriptions).
 
-10. Third-Party Integrations
+11. Third-Party Integrations
 Certain features of the bot (such as chatbot and moderation functions) rely on external services, particularly OpenAI. By using these features, you acknowledge that third-party services have their own Terms of Service and Privacy Policies. Please refer to these third-party terms when applicable.
 
-11. Limitation of Liability
+12. Limitation of Liability
   a. General Disclaimer
   The bot is provided "as-is" and "as-available" without warranties of any kind, either expressed or implied. We do not guarantee that the bot will be free from defects, uninterrupted, or that it will meet your expectations. To the fullest extent permitted by applicable law, we disclaim all warranties, expressed or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
   
@@ -78,13 +98,23 @@ Certain features of the bot (such as chatbot and moderation functions) rely on e
   
   Furthermore, we reserve the right to immediately disable or limit the bot's functionality if it is being used to encourage or facilitate illegal or harmful activities.
 
-12. Termination of Service
+  g. Cryptocurrency Transactions
+
+  We are not liable for:
+  - Lost or stolen cryptocurrency
+  - Transactions sent to incorrect addresses
+  - Network fees or gas costs
+  - Delays in transaction processing
+  - Any losses due to network issues or blockchain congestion
+  - Losses due to user error in wallet verification or sending process
+
+13. Termination of Service
 We reserve the right to suspend or terminate access to the bot at any time, for any reason, including rule violations or the protection of the bot’s functionality.
 
-13. User-Generated Content
+14. User-Generated Content
 If the bot interacts with user-generated content (e.g., chat logs or messages), users are responsible for ensuring their content complies with all applicable laws and does not infringe on the rights of third parties. Inappropriate or illegal content will be removed.
 
-14. Data and Privacy Protection
+15. Data and Privacy Protection
 The bot collects the following data:
 
 Server Data: Server IDs and Channel IDs to facilitate interaction within the server.
@@ -93,10 +123,10 @@ We do not share any of this data with third parties, except for the chatbot feat
 
 Security: While we strive to ensure the data processed by the bot is secure, please understand that the bot is run locally and data is temporarily stored only for operational purposes.
 
-15. Governing Law
+16. Governing Law
 These Terms of Service shall be governed by and construed in accordance with the laws of Hungary, without regard to its conflict of law principles. However, if you reside outside of Hungary, you may be entitled to protections and rights under the consumer protection laws of your own country. By using this bot, you agree that any legal action arising out of or related to the use of this bot will first attempt to be resolved in accordance with Hungarian law and courts. If local laws prevent this, any disputes may be brought in the courts of the user’s jurisdiction, subject to applicable local laws and regulations.
 
-16. Contact Information
+17. Contact Information
 For any questions, concerns, or additional information, you may contact us via:
 
 Email: pixelcryptonauts@gmail.com
