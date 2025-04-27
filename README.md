@@ -11,8 +11,8 @@ Education and community engagement are integral, with plans to share knowledge, 
 Whitepaper:
 https://pixelnauts.gitbook.io/pixel-cryptonauts-whitepaper/
 
-LinkTree:
-https://linktr.ee/pixel_cryptonaut
+Website:
+https://pixlnauts.vercel.app
 
 #TeamTrees:
 https://teamtrees.org/search?q=project%20cosmos
