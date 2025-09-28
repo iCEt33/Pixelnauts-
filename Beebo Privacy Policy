@@ -28,7 +28,7 @@ The bot runs locally on a mobile device (phone), and data is stored in two ways:
 
 Temporary Storage: Messages and user data are temporarily stored in the running script. When the phone is turned off, all chatlogs are erased. The chatlogs are not stored permanently or saved locally.
 
-Persistent Core Memory (Optional): Users can opt-in to core memory storage in a local JSON file ('core_memory.json') which enables the bot to:
+Persistent Core Memory: By default, the bot stores user profile data in a local JSON file ('core_memory.json') which enables the bot to:
 - Remember your preferences and interests over time
 - Adapt its responses to your communication style
 - Provide more personalized and relevant interactions
