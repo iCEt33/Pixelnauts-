@@ -125,6 +125,14 @@ Experimental memory
 
 when the bot is triggered it will try to store and use some previous messages from the user
 ------------------
+Core memory
+
+"!coremem"
+"!togglecoremem"
+"!deletecoremem"
+
+the bot consolidates every 5 message exchange to create a long-term memory
+------------------
 Chatbot
 
 just tag the bot or include "B, Beebo, B-b0" in your message and it should respond
