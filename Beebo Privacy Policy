@@ -8,6 +8,12 @@ Our Discord bot collects minimal data necessary for it to function correctly. Sp
 Server IDs, Channel IDs, User IDs, and Usernames: These are used to keep the bot operational and respond to commands.
 Messages Sent: The bot can access messages for moderation, entertainment purposes, and to interact with the OpenAI chatbot feature.
 Message Count Tracking: For certain features (such as moderation or spam detection), the bot temporarily tracks the number of messages sent within a specific period. This data is stored temporarily in the code's memory and is not accessible to Discord or stored permanently.
+Core Memory Data: The bot creates and maintains persistent user profiles including:
+- User identity information (name, occupation, key traits)
+- Conversation preferences and communication style  
+- Topic interests and how users relate to various subjects
+- This data is consolidated from conversation history to provide personalized interactions
+- Users can view, disable, or delete this data at any time using bot commands
 
 2. How We Use the Information
 The collected data is used solely to enable the bot’s core functions, including:
@@ -15,12 +21,23 @@ The collected data is used solely to enable the bot’s core functions, includin
 Chat Moderation: To ensure the server remains a safe and friendly environment.
 Chatbot Feature: Some messages are sent to OpenAI to process responses.
 Game and Entertainment Features: For features like the built-in games or other entertainment features, your messages are processed within the script.
-We do not analyze or track user behavior for marketing or other purposes, nor do we use third-party analytics.
+We DO NOT analyze or track user behavior for marketing or other purposes, nor do we use third-party analytics.
 
 3. How Data is Stored
-The bot runs on a mobile device (phone), and data is stored temporarily:
+The bot runs locally on a mobile device (phone), and data is stored in two ways:
 
 Temporary Storage: Messages and user data are temporarily stored in the running script. When the phone is turned off, all chatlogs are erased. The chatlogs are not stored permanently or saved locally.
+
+Persistent Core Memory (Optional): Users can opt-in to core memory storage in a local JSON file ('core_memory.json') which enables the bot to:
+- Remember your preferences and interests over time
+- Adapt its responses to your communication style
+- Provide more personalized and relevant interactions
+- Maintain continuity across conversations
+
+Users have full control through commands:
+- !coremem - View your stored profile data
+- !togglecoremem - Enable/disable core memory collection
+- !deletecoremem - Permanently delete your profile data
 
 Weekly Erasure: At least once a week, the phone is turned off, clearing all temporary logs.
 Local Environment: The bot is run using the PyDroid3 application, which also clears all temporary logs when the device is powered down.
@@ -60,7 +77,17 @@ If you wish to request deletion of any data (such as chatlogs), please contact u
 
 Email: pixelcryptonauts@gmail.com
 Discord: _ice_t
+
 Upon receiving such a request, we will restart the script, erasing all chatlogs displayed in the console.
+
+You can manage your data directly through bot commands:
+- !coremem - View what data is stored about you
+- !togglecoremem - Opt out of core memory collection
+- !deletecoremem - Delete your core memory profile
+
+For other requests, contact us:
+Email: pixelcryptonauts@gmail.com
+Discord: _ice_t
 
 8. Children's Privacy
 Our bot is generally safe for all ages. It contains fun and interactive features, including a blackjack game without currency and no violent or inappropriate content.
