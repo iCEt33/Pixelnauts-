@@ -1,6 +1,6 @@
 Terms of Service (ToS) for Beebo
 Effective Date: 10/23/2024
-Last Updated: 02/02/2025
+Last Updated: 09/29/2025
 
 By using this bot, you agree to the following Terms of Service (ToS). Please read these terms carefully, as they govern your use of the bot and explain how your data is handled.
 
@@ -13,6 +13,7 @@ The bot requires the following information in order to function:
 
 User Data: Usernames and User IDs.
 Server Data: Server IDs, Channel IDs, and messages sent in the server (or direct messages to the bot).
+Core Memory Data: The bot creates persistent user profiles from conversation history to provide personalized experiences. Users can view, disable, or delete this data at any time using bot commands.
 
 3. Data Storage and Use
 Collected data is temporarily stored within the app's runtime environment, which operates on a local device (phone). This means data is not permanently stored or shared with third parties unless required for bot functionality.
