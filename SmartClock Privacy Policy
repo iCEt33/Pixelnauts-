@@ -1,26 +1,40 @@
 Privacy Policy for SmartClock
-Effective Date: 4/27/2025
+Effective Date: 1/1/2026
 Owner: Pixlnauts
 Contact: pixelcryptonauts@gmail.com
 
-Pixlnauts ("we", "us", "our") is committed to protecting your privacy. This mobile application ("SmartClock") does not collect or store any personal data.
+Pixlnauts ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how SmartClock ("the App") handles your data.
 
+1. Data Collection and Storage
 Local Storage:
-User-entered reminders and notes are stored locally on the user's device only. We do not access, collect, or share this information.
+-User-entered data (reminders, notes, todos, alarms, calendar events, conversations, core memory, wallet data) is stored locally on your device only.
+-We do not access, collect, or transmit this data to our servers.
 
-External Links:
-SmartClock may open an external website. We are not responsible for the privacy practices or content of third-party websites.
+Google Drive Backup (Optional):
+-You can manually back up your data to your personal Google Drive account using the backup feature in the App.
+-We do not have access to your Google Drive. All data is stored in your own Google account under your control.
+-Wallet seed phrases are encrypted before backup for additional security.
+-Backups are manual and only occur when you initiate them.
 
-No Tracking:
-We do not collect location data, analytics data, or any other personal information.
+4. External Links
+SmartClock may contain links to third-party websites (e.g., GitHub, Terms of Service, blockchain explorers). We are not responsible for the privacy practices or content of these external sites.
 
-No Payments:
-SmartClock does not process payments. If users choose to donate, they are redirected to external platforms.
+5. No Tracking or Analytics
+-We do not collect location data, analytics data, usage statistics, or any other personal information.
+-We do not use cookies, trackers, or advertising networks.
 
-Children's Privacy:
-SmartClock is intended for general audiences and does not knowingly collect personal data from children under 13.
+6. No Payments
+SmartClock does not process payments. If users choose to donate, they are redirected to external platforms. We do not handle or store payment information.
 
-Changes:
-We may update this Privacy Policy. Any changes will be posted here.
+7. Children's Privacy
+SmartClock is intended for general audiences and does not knowingly collect personal data from children under 13 years old. If you believe a child has provided data to SmartClock, please contact us immediately.
 
-For questions, please contact us at pixelcryptonauts@gmail.com.
+8. Data Security
+-All sensitive data (wallet seed phrases) is encrypted using industry-standard encryption before being stored locally or backed up to Google Drive.
+-However, you are responsible for securing your device and Google account. Use strong passwords and enable two-factor authentication.
+
+9. Changes to This Policy
+We may update this Privacy Policy from time to time. Any changes will be posted here with a new "Effective Date." Continued use of SmartClock after changes constitutes acceptance of the updated policy.
+
+10. Contact Us
+For questions or concerns about this Privacy Policy, please contact us at pixelcryptonauts@gmail.com.
