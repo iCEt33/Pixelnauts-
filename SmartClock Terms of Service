@@ -1,27 +1,40 @@
 Terms of Service (ToS) for SmartClock
-Effective Date: 4/27/2025
+Effective Date: 1/1/2026
 Owner: Pixlnauts
 Contact: pixelcryptonauts@gmail.com
 
 By using SmartClock ("the App"), you agree to the following terms:
 
-Use at Your Own Risk:
-SmartClock is provided "as is" without warranties of any kind.
+1. Use at Your Own Risk
+SmartClock is provided "as is" without warranties of any kind. The App includes experimental features such as non-custodial cryptocurrency wallet functionality and cloud backup integration.
 
-User Responsibility:
-You are responsible for any data you input into SmartClock. Data is stored only on your device. 
-Pixlnauts is not liable for any loss or damage resulting from the use of SmartClock, including loss of data or malfunction.
+2. Cryptocurrency Wallet
+-Non-Custodial Wallet: SmartClock includes a non-custodial Polygon (POL) cryptocurrency wallet. You are solely responsible for securing your wallet's PIN and recovery phrase (seed phrase).
+-No Recovery by Pixlnauts: Pixlnauts cannot recover your wallet, funds, or seed phrase if lost. Store your 12-word recovery phrase securely offline.
+-Blockchain Transactions: All blockchain transactions are irreversible. Verify all transaction details before confirming. Pixlnauts is not responsible for incorrect addresses, lost funds, or blockchain network issues.
+-Third-Party Services: The wallet uses third-party APIs (Etherscan, CoinGecko) for blockchain data. Pixlnauts is not responsible for API downtime, inaccuracies, or service interruptions.
 
-External Links:
-SmartClock may contain links to third-party websites. We are not responsible for any damages or issues caused by visiting external sites.
+3. Google Drive Backup
+-Optional Feature: Google Drive backup is optional and requires you to grant permissions to SmartClock.
+-Data Security: Wallet seed phrases are encrypted before backup. However, you are responsible for the security of your Google account.
+-No Guarantee: Pixlnauts does not guarantee successful backup or restore. Always maintain offline backups of critical data (especially wallet recovery phrases).
 
-Prohibited Use:
-You agree not to use SmartClock for any illegal activities.
+4. User Responsibility
+-You are responsible for any data you input into SmartClock.
+-Data is stored locally on your device and optionally backed up to your Google Drive account.
+-Pixlnauts is not liable for any loss or damage resulting from the use of SmartClock, including loss of data, funds, or device malfunction.
 
-Modifications:
-We reserve the right to update or discontinue SmartClock at any time without notice.
+5. External Links
+SmartClock may contain links to third-party websites (e.g., GitHub, Privacy Policy). We are not responsible for any damages or issues caused by visiting external sites.
 
-Governing Law:
+6. Prohibited Use
+You agree not to use SmartClock for any illegal activities, including but not limited to money laundering, fraud, or circumventing financial regulations.
+
+7. Modifications
+We reserve the right to update or discontinue SmartClock at any time without notice. Continued use after updates constitutes acceptance of revised terms.
+
+8. Governing Law
 These Terms are governed by the laws of Hungary and the European Union.
 
+9. Contact
 If you have any questions, please contact pixelcryptonauts@gmail.com.
