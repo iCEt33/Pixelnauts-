@@ -1,5 +1,5 @@
 Terms of Service (ToS) for SmartClock
-Effective Date: 1/1/2026
+Effective Date: 6/3/2026
 Owner: Pixlnauts
 Contact: pixelcryptonauts@gmail.com
 
@@ -22,12 +22,15 @@ SmartClock is provided "as is" without warranties of any kind. The App includes 
 4. User Responsibility
 -You are responsible for any data you input into SmartClock.
 -Data is stored locally on your device and optionally backed up to your Google Drive account.
+-When using the B-b0 AI Assistant, your messages are transmitted to OpenAI's API to generate responses. Pixlnauts is not responsible for the content of AI-generated responses, OpenAI service availability, or how OpenAI handles data on their end. OpenAI's own terms of service and privacy policy apply to that transmission.
+-Optional donations are processed entirely by Google Play's in-app billing system. Pixlnauts does not handle, store, or have liability for any payment transactions.
 -Pixlnauts is not liable for any loss or damage resulting from the use of SmartClock, including loss of data, funds, or device malfunction.
 
 5. External Links
 SmartClock may contain links to third-party websites (e.g., GitHub, Privacy Policy). We are not responsible for any damages or issues caused by visiting external sites.
 
 6. Prohibited Use
+You must be at least 13 years old to use SmartClock.
 You agree not to use SmartClock for any illegal activities, including but not limited to money laundering, fraud, or circumventing financial regulations.
 
 7. Modifications
