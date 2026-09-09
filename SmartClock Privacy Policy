@@ -1,5 +1,5 @@
 Privacy Policy for SmartClock
-Effective Date: 6/3/2026
+Effective Date: 09/09/2026
 Owner: Pixlnauts
 Contact: pixelcryptonauts@gmail.com
 
@@ -23,6 +23,13 @@ AI Assistant (B-b0):
 -OpenAI processes this data according to their own privacy policy, available at openai.com/privacy.
 -If you do not use the AI Assistant, no data is transmitted to OpenAI.
 
+Wallet (Optional):
+-Your seed phrase and private keys never leave your device.
+-To show your balances and transaction history, the App sends your public wallet addresses to third-party blockchain explorers (Etherscan, BlockCypher, 3xpl) and requests coin prices from CoinGecko. 
+This is how every non-custodial wallet works, because the blockchain has to be queried to know what an address holds.
+-These services receive your public address and your IP address. They handle it under their own privacy policies.
+-If you do not use the Wallet, no data is sent to these services.
+
 2. External Links
 SmartClock may contain links to third-party websites (e.g., GitHub, Terms of Service, blockchain explorers). We are not responsible for the privacy practices or content of these external sites.
 
@@ -30,24 +37,20 @@ SmartClock may contain links to third-party websites (e.g., GitHub, Terms of Ser
 -We do not collect location data, analytics data, usage statistics, or any other personal information.
 -We do not use cookies, trackers, or advertising networks.
 
-4. Donations
-SmartClock includes an optional donation feature powered by Google Play's in-app billing system. 
-We do not process, handle, or store any payment information as all transactions are managed entirely by Google. 
-For questions about payment handling, refer to Google Play's privacy policy.
+4. Purchases and Donations
+SmartClock offers optional in-app purchases through Google Play's billing system: a support donation, and a 90-day unlimited-access unlock for the B-b0 assistant. 
+All transactions are handled entirely by Google. We do not process, receive or store any payment information. See Google Play's privacy policy for how payment data is handled.
 
-5. No Payments
-SmartClock does not process payments. If users choose to donate, they are redirected to external platforms. We do not handle or store payment information.
-
-6. Children's Privacy
+5. Children's Privacy
 SmartClock is intended for users aged 13 and older and does not knowingly collect personal data from children under 13. If you believe a child has provided data to SmartClock, please contact us immediately.
 
-7. Data Security
+6. Data Security
 -All sensitive data (wallet seed phrases) is encrypted using industry-standard encryption before being stored locally or backed up to Google Drive.
 -Data transmitted to third-party APIs (such as OpenAI) is sent over encrypted HTTPS connections.
 -You are responsible for securing your device and Google account. Use strong passwords and enable two-factor authentication.
 
-8. Changes to This Policy
+7. Changes to This Policy
 We may update this Privacy Policy from time to time. Any changes will be posted here with a new "Effective Date." Continued use of SmartClock after changes constitutes acceptance of the updated policy.
 
-9. Contact Us
+8. Contact Us
 For questions or concerns about this Privacy Policy, please contact us at pixelcryptonauts@gmail.com.
