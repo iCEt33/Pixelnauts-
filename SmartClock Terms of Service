@@ -1,20 +1,21 @@
 Terms of Service (ToS) for SmartClock
-Effective Date: 09/09/2026
+
+Effective Date: 25/09/2026
 Owner: Pixlnauts
 Contact: pixelcryptonauts@gmail.com
 
 By using SmartClock ("the App"), you agree to the following terms:
 
 1. Use at Your Own Risk
-SmartClock is provided "as is" without warranties of any kind. The App includes experimental features such as non-custodial cryptocurrency wallet functionality and cloud backup integration.
+SmartClock is provided "as is" without warranties of any kind. The App includes experimental features such as non-custodial cryptocurrency wallet functionality, private messaging (DripDrop) and cloud backup integration.
 
 2. Cryptocurrency Wallet
--Non-Custodial Wallet: SmartClock includes a non-custodial cryptocurrency wallet supporting Polygon (POL), Bitcoin (BTC) and Dogecoin (DOGE). 
+-Non-Custodial Wallet: SmartClock includes a non-custodial cryptocurrency wallet supporting Polygon (POL), Bitcoin (BTC) and Dogecoin (DOGE).
 You are solely responsible for securing your wallet's PIN and recovery phrase (seed phrase).
 -No Recovery by Pixlnauts: Pixlnauts cannot recover your wallet, funds, or seed phrase if lost. Store your 12-word recovery phrase securely offline.
--Blockchain Transactions: All blockchain transactions are irreversible. Verify all transaction details before confirming. 
+-Blockchain Transactions: All blockchain transactions are irreversible. Verify all transaction details before confirming.
 Pixlnauts is not responsible for incorrect addresses, lost funds, or blockchain network issues.
--Third-Party Services: The wallet uses third-party APIs (Etherscan, BlockCypher, 3xpl, CoinGecko) for blockchain and price data. 
+-Third-Party Services: The wallet uses third-party APIs (Etherscan, BlockCypher, 3xpl, CoinGecko) for blockchain and price data.
 Pixlnauts is not responsible for API downtime, inaccuracies, or service interruptions.
 
 3. Google Drive Backup
@@ -22,30 +23,42 @@ Pixlnauts is not responsible for API downtime, inaccuracies, or service interrup
 -Data Security: Wallet seed phrases are encrypted before backup. However, you are responsible for the security of your Google account.
 -No Guarantee: Pixlnauts does not guarantee successful backup or restore. Always maintain offline backups of critical data (especially wallet recovery phrases).
 
-4. User Responsibility
+4. DripDrop (Private Messages)
+By using DripDrop you agree:
+-Not to use it to harass, threaten, defraud or impersonate anyone, or to send illegal content. Child sexual abuse and exploitation, including any content that sexualises minors, is strictly prohibited.
+-That you are responsible for what you send.
+-That messages are end-to-end encrypted, so Pixlnauts cannot read, moderate, retrieve or delete them, or remove anyone from the Nostr network. You can block anyone in the App, and they are not notified.
+-That messages are carried by independent third-party relays outside Pixlnauts' control, and delivery is not guaranteed.
+-That messages are stored only on your device and are not backed up, so losing your device may mean losing them.
+
+5. User Responsibility
+
 -You are responsible for any data you input into SmartClock.
 -Data is stored locally on your device and optionally backed up to your Google Drive account.
--When using the B-b0 AI Assistant, your messages are transmitted to OpenAI's API to generate responses. 
-Pixlnauts is not responsible for the content of AI-generated responses, OpenAI service availability, or how OpenAI handles data on their end. 
+-When using the B-b0 AI Assistant, your messages are transmitted to OpenAI's API to generate responses.
+Pixlnauts is not responsible for the content of AI-generated responses, OpenAI service availability, or how OpenAI handles data on their end.
 OpenAI's own terms of service and privacy policy apply to that transmission.
--Optional in-app purchases, including the support donation and the unlimited-access unlock for the B-b0 AI Assistant, are processed entirely by Google Play's in-app billing system. 
+-Optional in-app purchases, including the support donation and the unlimited-access unlock for the B-b0 AI Assistant, are processed entirely by Google Play's in-app billing system.
 Pixlnauts does not handle, store, or have liability for any payment transactions.
--The B-b0 AI Assistant is free to use up to a monthly message limit. An optional purchase removes that limit for a fixed period. 
+-The B-b0 AI Assistant is free to use up to a monthly message limit. An optional purchase removes that limit for a fixed period.
 The limit, the period, and the availability of the Assistant may change or be discontinued at any time.
 -Pixlnauts is not liable for any loss or damage resulting from the use of SmartClock, including loss of data, funds, or device malfunction.
 
-5. External Links
+6. External Links
 SmartClock may contain links to third-party websites (e.g., GitHub, Privacy Policy). We are not responsible for any damages or issues caused by visiting external sites.
 
-6. Prohibited Use
+7. Prohibited Use
 You must be at least 13 years old to use SmartClock.
 You agree not to use SmartClock for any illegal activities, including but not limited to money laundering, fraud, or circumventing financial regulations.
 
-7. Modifications
+8. Modifications
 We reserve the right to update or discontinue SmartClock at any time without notice. Continued use after updates constitutes acceptance of revised terms.
 
-8. Governing Law
+9. Governing Law
 These Terms are governed by the laws of Hungary and the European Union.
 
-9. Contact
+10. Credits
+City data © GeoNames (geonames.org), licensed under Creative Commons Attribution 4.0 (creativecommons.org/licenses/by/4.0/). SmartClock uses a modified version: time zones corrected and extra search spellings added.
+
+11. Contact
 If you have any questions, please contact pixelcryptonauts@gmail.com.
