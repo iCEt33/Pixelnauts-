@@ -1,8 +1,8 @@
 Privacy Policy for SmartClock
-Effective Date: 09/09/2026
+
+Effective Date: 25/09/2026
 Owner: Pixlnauts
 Contact: pixelcryptonauts@gmail.com
-
 Pixlnauts ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how SmartClock ("the App") handles your data.
 
 1. Data Collection and Storage
@@ -18,17 +18,27 @@ Google Drive Backup (Optional):
 -Backups are manual and only occur when you initiate them.
 
 AI Assistant (B-b0):
+
 -When you use the B-b0 AI Assistant feature, your messages are sent to OpenAI's API to generate responses. This transmission occurs over encrypted HTTPS.
 -We do not store your messages on our servers, since we don't even have any, and no personally identifying information is attached to these requests.
 -OpenAI processes this data according to their own privacy policy, available at openai.com/privacy.
 -If you do not use the AI Assistant, no data is transmitted to OpenAI.
 
 Wallet (Optional):
+
 -Your seed phrase and private keys never leave your device.
--To show your balances and transaction history, the App sends your public wallet addresses to third-party blockchain explorers (Etherscan, BlockCypher, 3xpl) and requests coin prices from CoinGecko. 
+-To show your balances and transaction history, the App sends your public wallet addresses to third-party blockchain explorers (Etherscan, BlockCypher, 3xpl) and requests coin prices from CoinGecko.
 This is how every non-custodial wallet works, because the blockchain has to be queried to know what an address holds.
 -These services receive your public address and your IP address. They handle it under their own privacy policies.
 -If you do not use the Wallet, no data is sent to these services.
+
+DripDrop Private Messages (Optional):
+
+-DripDrop lets you exchange messages with other SmartClock users. Messages are end-to-end encrypted on your device: only you and the person you write to can read them. Not us, and not the relays that carry them.
+-Messages travel through public Nostr relays run by independent third parties, which we do not operate. To deliver your messages, those relays see your DripDrop ID (a public identifier derived from your wallet, not your name, email or phone number) and your IP address, as any server you connect to does.
+-Messages are stored only on your device, encrypted, and are never backed up. Your DripDrop contacts and blocked list are included, encrypted, in the Wallet backup saved to your own Google Drive, if you use that feature.
+-On mobile data, DripDrop only connects while you have it open. On Wi-Fi, SmartClock also checks for new messages while the App is on screen. It never runs in the background.
+-Until you open DripDrop and accept its notice, no data is sent to any relay.
 
 2. External Links
 SmartClock may contain links to third-party websites (e.g., GitHub, Terms of Service, blockchain explorers). We are not responsible for the privacy practices or content of these external sites.
@@ -38,7 +48,7 @@ SmartClock may contain links to third-party websites (e.g., GitHub, Terms of Ser
 -We do not use cookies, trackers, or advertising networks.
 
 4. Purchases and Donations
-SmartClock offers optional in-app purchases through Google Play's billing system: a support donation, and a 90-day unlimited-access unlock for the B-b0 assistant. 
+SmartClock offers optional in-app purchases through Google Play's billing system: a support donation, and a 90-day unlimited-access unlock for the B-b0 assistant.
 All transactions are handled entirely by Google. We do not process, receive or store any payment information. See Google Play's privacy policy for how payment data is handled.
 
 5. Children's Privacy
@@ -46,7 +56,7 @@ SmartClock is intended for users aged 13 and older and does not knowingly collec
 
 6. Data Security
 -All sensitive data (wallet seed phrases) is encrypted using industry-standard encryption before being stored locally or backed up to Google Drive.
--Data transmitted to third-party APIs (such as OpenAI) is sent over encrypted HTTPS connections.
+-Data transmitted to third-party services (such as OpenAI, the blockchain explorers and DripDrop's relays) is sent over encrypted connections (HTTPS, or secure WebSockets for DripDrop).
 -You are responsible for securing your device and Google account. Use strong passwords and enable two-factor authentication.
 
 7. Changes to This Policy
